@@ -13,6 +13,8 @@
 		DF32A11028841FAE00389DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF32A10F28841FAE00389DBB /* Assets.xcassets */; };
 		DF32A11328841FAE00389DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF32A11128841FAE00389DBB /* LaunchScreen.storyboard */; };
 		DF32A11B28843CE800389DBB /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32A11A28843CE800389DBB /* Country.swift */; };
+		DF32A11D2884411B00389DBB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32A11C2884411B00389DBB /* DetailViewController.swift */; };
+		DF32A1212884483000389DBB /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = DF32A1202884483000389DBB /* countries.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DF32A11228841FAE00389DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF32A11428841FAE00389DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF32A11A28843CE800389DBB /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		DF32A11C2884411B00389DBB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DF32A1202884483000389DBB /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,10 @@
 				DF32A10628841FAC00389DBB /* AppDelegate.swift */,
 				DF32A10828841FAC00389DBB /* SceneDelegate.swift */,
 				DF32A10A28841FAC00389DBB /* ViewController.swift */,
+				DF32A11C2884411B00389DBB /* DetailViewController.swift */,
 				DF32A11A28843CE800389DBB /* Country.swift */,
 				DF32A11128841FAE00389DBB /* LaunchScreen.storyboard */,
+				DF32A1202884483000389DBB /* countries.json */,
 			);
 			path = FactsAboutCountries;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF32A1212884483000389DBB /* countries.json in Resources */,
 				DF32A11328841FAE00389DBB /* LaunchScreen.storyboard in Resources */,
 				DF32A11028841FAE00389DBB /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +146,7 @@
 			files = (
 				DF32A11B28843CE800389DBB /* Country.swift in Sources */,
 				DF32A10B28841FAC00389DBB /* ViewController.swift in Sources */,
+				DF32A11D2884411B00389DBB /* DetailViewController.swift in Sources */,
 				DF32A10728841FAC00389DBB /* AppDelegate.swift in Sources */,
 				DF32A10928841FAC00389DBB /* SceneDelegate.swift in Sources */,
 			);
