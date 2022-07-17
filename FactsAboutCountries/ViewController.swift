@@ -36,7 +36,9 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        let detailVC = DetailViewController()
+        detailVC.country = countries[indexPath.row]
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
