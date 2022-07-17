@@ -7,13 +7,32 @@ class ViewController: UITableViewController {
     let cellId = "cellId"
     let cellFont = UIFont.systemFont(ofSize: 18)
 
-    var countries = [Country.example]
+    var countries = [Country]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         title = "Countries"
         navigationController?.navigationBar.prefersLargeTitles = true
+
+        if let data = getData(),
+           let decodedData = try? JSONDecoder().decode([Country].self, from: data) {
+            countries = decodedData
+        } else {
+            fatalError("Error on decoding countries.json")
+        }
+    }
+
+    func getData() -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: "countries", ofType: "json"),
+               let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                return jsonData
+            }
+        } catch {
+            print(error)
+        }
+        return nil
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
